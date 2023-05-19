@@ -12,7 +12,8 @@ const AddPopup = () => {
               return { ...item, songs: [...item.songs, songToAdd] }
             }
             return item
-          })
+        })
+        
       
         setPlaylists(updatedPlaylists)
         setSongToAdd({})

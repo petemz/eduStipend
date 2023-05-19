@@ -3,7 +3,7 @@ const Header = () => {
         <header className='w-full px-4 absolute top-4'>
           <nav className="h-full bg-white rounded-lg border-black border">
             <ul className="flex h-full justify-end items-center px-3 py-2 text-xl">
-              <li className="">
+              <li className="ml-2">
                 <a href="##">
                     <div className="px-5 py-1">
                         Contact us
