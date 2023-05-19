@@ -1,6 +1,8 @@
 import { useContext, useRef, useEffect } from "react";
 import { Context } from "./Context"
 
+
+//This is is likea modal that pops up when a user tries to ad a song to a playlist fromm the homepage
 const AddPopup = () => {
     const ref = useRef()
     const { playlists, setPlaylists, songToAdd, setSongToAdd, isPopupVisible, setIsPopupVisible } = useContext(Context)
