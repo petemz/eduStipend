@@ -1,6 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import { Context } from "./Context"
 
+//This is the component for trending songs, and it fetces it's data from a music API
 const Trends = () => {
     const { handleAddClick } = useContext(Context)
     const [songs, setSongs] = useState([])

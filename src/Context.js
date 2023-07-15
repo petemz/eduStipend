@@ -13,13 +13,11 @@ function ContextProvider(props) {
     }
 
     const [playlists, setPlaylists] = useState(() => {
-        // Retrieve playlists from local storage or use the default value
         const storedPlaylists = localStorage.getItem("playlists");
         return storedPlaylists ? JSON.parse(storedPlaylists) : getDefaultPlaylists();
     });
 
     useEffect(() => {
-        // Save playlists to local storage whenever it changes
         localStorage.setItem("playlists", JSON.stringify(playlists));
     }, [playlists]);
 
@@ -56,8 +54,6 @@ function ContextProvider(props) {
             createdBy: "Username",
         },
     ]}
-
-    //console.log(playlists)
 
     return (
         <Context.Provider value={{ 
